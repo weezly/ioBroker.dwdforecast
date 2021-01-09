@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "template",
+        "name": "dwdforecast",
         "version": "0.0.1",
         "news": {
             "0.0.1": {
@@ -42,7 +42,7 @@
             "zh-cn": "适配器开发的模板"
         },
         "authors": [
-            "Author <author@mail.com>"
+            "Author <djweezly@gmail.com>"
         ],
         "keywords": [
             "ioBroker",
@@ -55,8 +55,8 @@
         "main": "main.js",
         "icon": "template.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/Author/ioBroker.template/master/admin/template.png",
-        "readme": "https://github.com/Author/ioBroker.template/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/weezly/ioBroker.dwdforecast/master/admin/template.png",
+        "readme": "https://github.com/weezly/ioBroker.dwdforecast/blob/master/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "general",

@@ -1,12 +1,12 @@
 {
-  "name": "iobroker.template",
+  "name": "iobroker.dwdforecast",
   "version": "0.0.1",
   "description": "Template for adapter development",
   "author": {
-    "name": "Author",
-    "email": "author@mail.com"
+    "name": "Bernd Wißler",
+    "email": "djweezly@gmail.com"
   },
-  "homepage": "https://github.com/Author/ioBroker.template",
+  "homepage": "https://github.com/weezly/ioBroker.dwdforecast",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -16,9 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Author/ioBroker.template"
+    "url": "https://github.com/weezly/ioBroker.dwdforecast"
   },
   "dependencies": {
+    "axios": "~0.21.1",
+    "sax": "~1.2.4",
+    "unzipper": "~0.10.11",
     "@iobroker/adapter-core": "^2.4.0"
   },
   "devDependencies": {
@@ -53,7 +56,7 @@
     "lint": "eslint"
   },
   "bugs": {
-    "url": "https://github.com/Author/ioBroker.template/issues"
+    "url": "https://github.com/weezly/ioBroker.dwdforecast/issues"
   },
   "readmeFilename": "README.md"
 }
