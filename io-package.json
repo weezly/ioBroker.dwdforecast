@@ -16,30 +16,14 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Template (JavaScript)",
+        "title": "Local DWD weather forecast data",
         "titleLang": {
-            "en": "Template (JavaScript)",
-            "de": "Vorlage (JavaScript)",
-            "ru": "Шаблон (JavaScript)",
-            "pt": "Modelo (JavaScript)",
-            "nl": "Sjabloon (JavaScript)",
-            "fr": "Modèle (JavaScript)",
-            "it": "Modello (JavaScript)",
-            "es": "Plantilla (JavaScript)",
-            "pl": "Szablon (JavaScript)",
-            "zh-cn": "范本（JavaScript）"
+            "en": "Local weather forecast data from the german DWD",
+            "de": "Lokale Stations-Wetterdaten vom Deutschen Wetterdienst"
         },
         "desc": {
-            "en": "Template for adapter development",
-            "de": "Vorlage für die Adapterentwicklung",
-            "ru": "Шаблон для разработки адаптера",
-            "pt": "Modelo para desenvolvimento de adaptador",
-            "nl": "Sjabloon voor adapterontwikkeling",
-            "fr": "Modèle de développement d'adaptateur",
-            "it": "Modello per lo sviluppo dell'adattatore",
-            "es": "Plantilla para el desarrollo de adaptadores",
-            "pl": "Szablon do tworzenia adapterów",
-            "zh-cn": "适配器开发的模板"
+            "en": "Local weather forecast data from the german DWD",
+            "de": "Lokale Stations-Wetterdaten vom Deutschen Wetterdienst"
         },
         "authors": [
             "Author <djweezly@gmail.com>"
@@ -48,7 +32,11 @@
             "ioBroker",
             "template",
             "Smart Home",
-            "home automation"
+            "home automation",
+            "dwd",
+            "wetter",
+            "klima",
+            "weather"
         ],
         "license": "MIT",
         "platform": "Javascript/Node.js",
@@ -61,6 +49,8 @@
         "mode": "daemon",
         "type": "general",
         "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
         "materialize": true,
         "materializeTab": true,
         "adminTab": {
