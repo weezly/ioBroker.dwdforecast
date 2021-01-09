@@ -3,7 +3,7 @@ const axios = require("axios"),
     unzipper = require("unzipper"),
     sax = require("sax");
 
-module.exports.read=(adapter)=>{
+const read=(adapter)=>{
     const MOSMIX_URL = `https://opendata.dwd.de/weather/local_forecasts/mos/MOSMIX_L/single_stations/${adapter.config.mosmixStationId}/kml/MOSMIX_L_LATEST_${adapter.config.mosmixStationId}.kmz`;
     adapter.log.debug("Reading MOSMIX data");
 
@@ -68,3 +68,25 @@ module.exports.read=(adapter)=>{
         });
     })
 }
+
+// const adapter={
+//     log:{
+//         error:(...args)=>{
+//             console.error(...args)
+//         },
+//         debug: (...args) => {
+//             console.log(...args)
+//         }
+//     },
+//     config: {
+//         mosmixStationId: "Q811"
+//     }
+// }
+
+// read(adapter).then(result=>{
+//     console.log(result)
+// }).catch(err=>{
+//     console.log(err)
+// })
+
+module.exports.read=read
