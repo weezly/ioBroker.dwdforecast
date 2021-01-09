@@ -1,0 +1,546 @@
+{
+	"TTT": {
+		"UnitOfMeasurement": "K",
+		"Description": "Temperature 2m above surface"
+	},
+	"Td": {
+		"UnitOfMeasurement": "K",
+		"Description": "Dewpoint 2m above surface"
+	},
+	"TX": {
+		"UnitOfMeasurement": "K",
+		"Description": "Maximum temperature - within the last 12 hours"
+	},
+	"TN": {
+		"UnitOfMeasurement": "K",
+		"Description": "Minimum temperature - within the last 12 hours"
+	},
+	"DD": {
+		"UnitOfMeasurement": "0°..360°",
+		"Description": "Wind direction"
+	},
+	"FF": {
+		"UnitOfMeasurement": "m/s",
+		"Description": "Wind speed"
+	},
+	"FX1": {
+		"UnitOfMeasurement": "m/s",
+		"Description": "Maximum wind gust within the last hour"
+	},
+	"FX3": {
+		"UnitOfMeasurement": "m/s",
+		"Description": "Maximum wind gust within the last 3 hours"
+	},
+	"FXh": {
+		"UnitOfMeasurement": "m/s",
+		"Description": "Maximum wind gust within the last 12 hours"
+	},
+	"RR1c": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Total precipitation during the last hour consistent with significant weather"
+	},
+	"RR1": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Total precipitation during the last hour"
+	},
+	"RR3c": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Total precipitation during the last 3 hours consistent with significant weather"
+	},
+	"RR3": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Total precipitation during the last 3 hours"
+	},
+	"RRS1c": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Snow-Rain-Equivalent during the last hour"
+	},
+	"RRS3c": {
+		"UnitOfMeasurement": "kg/m2",
+		"Description": "Snow-Rain-Equivalent during the last 3 hours"
+	},
+	"ww": {
+		"UnitOfMeasurement": "-",
+		"Description": "Significant Weather"
+	},
+	"W1W2": {
+		"UnitOfMeasurement": "-",
+		"Description": "Past weather during the last 6 hours"
+	},
+	"N": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Total cloud cover"
+	},
+	"Neff": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Effective cloud cover"
+	},
+	"N05": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Cloud cover below 500 ft."
+	},
+	"Nl": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Low cloud cover (lower than 2 km)"
+	},
+	"Nm": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Midlevel cloud cover (2-7 km)"
+	},
+	"Nh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "High cloud cover (>7 km)"
+	},
+	"PPPP": {
+		"UnitOfMeasurement": "Pa",
+		"Description": "Surface pressure, reduced"
+	},
+	"T5cm": {
+		"UnitOfMeasurement": "K",
+		"Description": "Temperature 5cm above surface"
+	},
+	"RadS3": {
+		"UnitOfMeasurement": "kJ/m2",
+		"Description": "Short wave radiation balance during the last 3 hours"
+	},
+	"Rad1h": {
+		"UnitOfMeasurement": "kJ/m2",
+		"Description": "Global Irradiance"
+	},
+	"RadL3": {
+		"UnitOfMeasurement": "kJ/m2",
+		"Description": "Long wave radiation balance during the last 3 hours"
+	},
+	"VV": {
+		"UnitOfMeasurement": "m",
+		"Description": "Visibility"
+	},
+	"SunD1": {
+		"UnitOfMeasurement": "s",
+		"Description": "Sunshine duration during the last Hour"
+	},
+	"FXh25": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of wind gusts >= 25kn within the last 12 hours"
+	},
+	"FXh40": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of wind gusts >= 40kn within the last 12 hours"
+	},
+	"FXh55": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of wind gusts >= 55kn within the last 12 hours"
+	},
+	"wwM": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability for fog within the last hour"
+	},
+	"wwM6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability for fog within the last 6 hours"
+	},
+	"wwMh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability for fog within the last 12 hours"
+	},
+	"Rh00": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.0mm during the last 12 hours"
+	},
+	"R602": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.2mm during the last 6 hours"
+	},
+	"Rh02": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.2mm during the last 12 hours"
+	},
+	"Rd02": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.2mm during the last 24 hours"
+	},
+	"Rh10": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 1.0mm during the last 12 hours"
+	},
+	"R650": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 5.0mm during the last 6 hours"
+	},
+	"Rh50": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 5.0mm during the last 12 hours"
+	},
+	"Rd50": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 5.0mm during the last 24 hours"
+	},
+	"TG": {
+		"UnitOfMeasurement": "K",
+		"Description": "Minimum surface temperature at 5cm within the last 12 hours"
+	},
+	"TM": {
+		"UnitOfMeasurement": "K",
+		"Description": "Mean temperature during the last 24 hours"
+	},
+	"DRR1": {
+		"UnitOfMeasurement": "s",
+		"Description": "Duration of precipitation within the last hour"
+	},
+	"wwZ": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of drizzle within the last hour"
+	},
+	"wwD": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of stratiform precipitation within the last hour"
+	},
+	"wwC": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of convective precipitation within the last hour"
+	},
+	"wwT": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of thunderstorms within the last hour"
+	},
+	"wwL": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of liquid precipitation within the last hour"
+	},
+	"wwS": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of solid precipitation within the last hour"
+	},
+	"wwF": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of freezing rain within the last hour"
+	},
+	"wwP": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of precipitation within the last hour"
+	},
+	"VV10": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Visibility below 1000m"
+	},
+	"E_TTT": {
+		"UnitOfMeasurement": "K",
+		"Description": "Absolute error temperature 2m above surface"
+	},
+	"E_FF": {
+		"UnitOfMeasurement": "m/s",
+		"Description": "Absolute error wind speed 10m above surface"
+	},
+	"E_DD": {
+		"UnitOfMeasurement": "0°..360°",
+		"Description": "Absolute error wind direction"
+	},
+	"E_Td": {
+		"UnitOfMeasurement": "K",
+		"Description": "Absolute error dew point 2m above surface"
+	},
+	"RR6": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 6 hours"
+	},
+	"RR6c": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 6 hours consistent with significant weather"
+	},
+	"R600": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.0mm during the last 6 hours"
+	},
+	"R101": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.1 mm during the last hour"
+	},
+	"R102": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.2 mm during the last hour"
+	},
+	"R103": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.3 mm during the last hour"
+	},
+	"R105": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.5 mm during the last hour"
+	},
+	"R107": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.7 mm during the last hour"
+	},
+	"R110": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 1.0 mm during the last hour"
+	},
+	"R120": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 2.0 mm during the last hour"
+	},
+	"SunD": {
+		"UnitOfMeasurement": "s",
+		"Description": "Yesterdays total sunshine duration"
+	},
+	"RSunD": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Relative sunshine duration within the last 24 hours"
+	},
+	"PSd00": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: relative sunshine duration >  0 % within 24 hours"
+	},
+	"PSd30": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: relative sunshine duration > 30 % within 24 hours"
+	},
+	"PSd60": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: relative sunshine duration > 60 % within 24 hours"
+	},
+	"RRad1": {
+		"UnitOfMeasurement": "% (0..80)",
+		"Description": "Global irradiance within the last hour"
+	},
+	"PEvap": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Potential evapotranspiration within the last 24 hours"
+	},
+	"R130": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 3.0 mm during the last hour"
+	},
+	"R150": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 5.0 mm during the last hour"
+	},
+	"RR1o1": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 10 mm during the last hour"
+	},
+	"RR1w1": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 15 mm during the last hour"
+	},
+	"RR1u1": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 25 mm during the last hour"
+	},
+	"wwD6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of stratiform precipitation within the last 6 hours"
+	},
+	"wwC6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of convective precipitation within the last 6 hours"
+	},
+	"wwT6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of thunderstorms within the last 6 hours"
+	},
+	"wwP6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of precipitation within the last 6 hours"
+	},
+	"wwL6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of liquid precipitation within the last 6 hours"
+	},
+	"wwF6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of freezing rain within the last 6 hours"
+	},
+	"wwS6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of solid precipitation within the last 6 hours"
+	},
+	"wwZ6": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of drizzle within the last 6 hours"
+	},
+	"wwMd": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of fog within the last 24 hours"
+	},
+	"FX625": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of gusts >= 25kn within the last 6 hours"
+	},
+	"FX640": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of gusts >= 40kn within the last 6 hours"
+	},
+	"FX655": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of gusts >= 55kn within the last 6 hours"
+	},
+	"wwDh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of stratiform precipitation within the last 12 hours"
+	},
+	"wwCh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of convective precipitation within the last 12 hours"
+	},
+	"wwTh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of thunderstorms within the last 12 hours"
+	},
+	"wwPh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of precipitation within the last 12 hours"
+	},
+	"wwLh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of liquid precipitation within the last 12 hours"
+	},
+	"wwFh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of freezing rain within the last 12 hours"
+	},
+	"wwSh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of solid precipitation within the last 12 hours"
+	},
+	"wwZh": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of drizzle within the last 12 hours"
+	},
+	"R610": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 1.0 mm during the last 6 hours"
+	},
+	"RRh": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 12 hours"
+	},
+	"RRhc": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 12 hours consistent with significant weather"
+	},
+	"ww3": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Significant Weather of the last 3 hours"
+	},
+	"RRL1c": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total liquid precipitation during the last hour consistent with significant weather"
+	},
+	"Rd00": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 0.0 mm during the last 24 hours"
+	},
+	"Rd10": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of precipitation > 1.0 mm during the last 24 hours"
+	},
+	"RRd": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 24 hours"
+	},
+	"RRdc": {
+		"UnitOfMeasurement": "kg / m2",
+		"Description": "Total precipitation during the last 24 hours consistent with significant weather"
+	},
+	"Nlm": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Cloud cover low and mid level clouds below 7000 m"
+	},
+	"wwPd": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of any precipitation within the last 24 hours"
+	},
+	"H_BsC": {
+		"UnitOfMeasurement": "m",
+		"Description": "Cloud base of convective clouds"
+	},
+	"wwTd": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability: Occurrence of thunderstorms within the last 24 hours"
+	},
+	"E_PPP": {
+		"UnitOfMeasurement": "Pa",
+		"Description": "Absolute error surface pressure"
+	},
+	"SunD3": {
+		"UnitOfMeasurement": "s",
+		"Description": "Sunshine duration during the last three hours"
+	},
+	"WPc11": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Optional significant weather (highest priority) during the last hour"
+	},
+	"WPc31": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Optional significant weather (highest priority) during the last 3 hours"
+	},
+	"WPc61": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Optional significant weather (highest priority) during the last 6 hours"
+	},
+	"WPch1": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Optional significant weather (highest priority) during the last 12 hours"
+	},
+	"WPcd1": {
+		"UnitOfMeasurement": "- (0..95)",
+		"Description": "Optional significant weather (highest priority) during the last 24 hours"
+	},
+	"Sa3": {
+		"UnitOfMeasurement": "m",
+		"Description": "Accumulated new snow amount in 3 hours"
+	},
+	"Sa6": {
+		"UnitOfMeasurement": "m",
+		"Description": "Accumulated new snow amount in 6 hours (amount of 3h values)"
+	},
+	"Sah": {
+		"UnitOfMeasurement": "m",
+		"Description": "Accumulated new snow amount in 12 hours (amount of 6h values)"
+	},
+	"Sad": {
+		"UnitOfMeasurement": "m",
+		"Description": "Accumulated new snow amount in 24 hours (amount of 12h values)"
+	},
+	"Sa605": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 5cm new snow amount in 6 hours"
+	},
+	"Sa610": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 10cm new snow amount in 6 hours"
+	},
+	"Sa620": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 20cm new snow amount in 6 hours"
+	},
+	"Sah05": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 5cm new snow amount in 12 hours"
+	},
+	"Sah10": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 10cm new snow amount in 12 hours"
+	},
+	"Sah30": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 30cm new snow amount in 12 hours"
+	},
+	"Sad10": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 10cm new snow amount in 24 hours"
+	},
+	"Sad30": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 30cm new snow amount in 24 hours"
+	},
+	"Sad50": {
+		"UnitOfMeasurement": "% (0..100)",
+		"Description": "Probability of > 50cm new snow amount in 24 hours"
+	},
+	"SnCv": {
+		"UnitOfMeasurement": "m",
+		"Description": "Snow depth"
+	}
+}

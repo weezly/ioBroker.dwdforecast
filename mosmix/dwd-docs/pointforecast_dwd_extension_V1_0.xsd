@@ -1,0 +1,141 @@
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dwd="https://opendata.dwd.de/weather/lib/pointforecast_dwd_extension_V1_0.xsd" targetNamespace="https://opendata.dwd.de/weather/lib/pointforecast_dwd_extension_V1_0.xsd">
+  <xs:element name="ProductDefinition" >
+    <xs:complexType>
+      <xs:sequence>
+
+
+        <xs:element name="Issuer" type="xs:string" minOccurs="1" maxOccurs="1" /> <!-- Responsible issuer for this product --> 
+
+
+        <xs:element name="ProductID" minOccurs="1" maxOccurs="1" >
+          <xs:annotation>
+            <xs:documentation>Unique identification tag for this product, indicating the meteorological application and perhaps also the data, that was utilized for generation of this product.</xs:documentation>
+          </xs:annotation>
+	      <xs:simpleType>
+	        <xs:restriction base="xs:string">
+	          <xs:enumeration value="EZ_MOS"/> <!-- Model Output Statistics (MOS) point forecasts based on EZMW NWP-Model  -->
+	          <xs:enumeration value="ICON_MOS"/> <!-- MOS point forecasts based on ICON NWP-Model  -->
+	          <xs:enumeration value="MOSMIX"/> <!-- MOS point forecasts based on statistically optimized combination of EZ_MOS and ICON_MOS forecasts -->
+	          <xs:enumeration value="COSMO_DE_EPS_EMOS"/> <!-- Ensemble MOS point forecasts based on COSMO-DE EPS NWP --> 		  
+	          <xs:enumeration value="MODELMIX"/> <!-- Ensemble MOS point forecasts based on various EPS NWP single MOS forecasts --> 	
+              <xs:enumeration value="GPTMOS"/> <!-- MOS point forecasts based on statistically optimized combination of EZ_MOS and ICON_MOS based forecasts for gas consumption-->			  
+	          <xs:enumeration value="ICON_DMO"/> <!-- Point forecasts based on Direct Model Output from ICON13 - Replacement for Files o_gdmo* -->
+	          <xs:enumeration value="ICON_NEST_DMO"/> <!-- Point forecasts based on Direct Model Output from ICON6 Nest - Replacement for Files o_ldmo* -->
+	        </xs:restriction>
+	      </xs:simpleType>
+        </xs:element>
+
+
+        <xs:element name="GeneratingProcess" type="xs:string" minOccurs="1" maxOccurs="1" >
+          <xs:annotation>
+            <xs:documentation>Detailed information about the meteorological application, that was used for generating this product</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+
+
+        <xs:element name="IssueTime" minOccurs="1" maxOccurs="1"  type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>Modelrun or issue time for this product. The timepoint, at which the meteorological application was executed to generate this product.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+
+
+	<xs:element name="ReferencedModel" minOccurs="1" maxOccurs="1" >
+          <xs:annotation>
+            <xs:documentation>If the meteorological application responsible for this product used NWP-Modeldata, it shall list its utilized NWP-Models with their respective Modelruns. </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Model" maxOccurs="unbounded" minOccurs="0">
+		<xs:complexType>
+		  <xs:attribute type="xs:string" name="name" use="required"/>
+		  <xs:attribute type="xs:dateTime" name="referenceTime" use="required"/>
+		</xs:complexType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+		
+        <xs:element name="ForecastTimeSteps" minOccurs="1" maxOccurs="1" >
+          <xs:annotation>
+            <xs:documentation>Forecast Timesteps contained in this product</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TimeStep" type="xs:dateTime" maxOccurs="unbounded" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="FormatCfg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="dwd:UndefChar" name="DefaultUndefSign" default="-">
+                <xs:annotation>
+                  <xs:documentation>this is the definition of the "classic" Character for an undefined value within the data</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+	<!-- Descriptive-Reference to MetElements contained in this Forecast-Product -->
+ 	<xs:element name="MetElementDefinition" type="xs:anyURI" default="https://opendata.dwd.de/weather/lib/MetElementDefinition.xml" />
+	
+     </xs:sequence>
+    </xs:complexType>
+  </xs:element> <!-- END Product-Definition -->
+
+
+  <xs:simpleType name="UndefChar">
+    <xs:restriction base="xs:string">
+      <xs:length fixed="true" value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="floatWithNewUndefSign">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base="xs:float"/>
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="dwd:UndefChar"/>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  
+
+  <xs:simpleType name="floatList" >
+    <xs:list itemType="dwd:floatWithNewUndefSign" />
+  </xs:simpleType>
+    
+  <!-- This is the representation of a forecast for all represented Timesteps for one meteorological Element -->
+  <xs:element name="Forecast">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="value">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="dwd:floatList" />
+            </xs:simpleContent>
+          </xs:complexType>
+		  
+          <xs:key name="UndefCfgKey">                       <!-- Undef-Sign used in Forecast-Data Values shall match the defined Undef-Sign -->
+           <xs:selector xpath="FormatCfg" />
+           <xs:field xpath="DefaultUndefSign" />
+          </xs:key>
+
+          <xs:keyref name="UndefCfgRef" refer="dwd:UndefCfgKey">
+           <xs:selector xpath="dwd:floatList" />
+           <xs:field xpath="dwd:UndefChar" />
+          </xs:keyref>
+  	    
+		</xs:element>
+      </xs:sequence>
+      <xs:attribute name="elementName" type="xs:string" /> <!-- Element-Name must be matched in referenced MetElementDefinition -->
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

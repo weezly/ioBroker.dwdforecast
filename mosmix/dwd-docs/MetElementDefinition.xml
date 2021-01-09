@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<MetElementDefinition xmlns:dwd="https://opendata.dwd.de/weather/lib/MetElementDefinition.xsd">
+   <!--MetElement>   <ShortName>T_2M</ShortName>   <UnitOfMeasurement>Kelvin</UnitOfMeasurement>   <Description>Temperature 2m above surface, measured in Kelvin</Description></MetElement>
+   <MetElement>   <ShortName>Td</ShortName>   <UnitOfMeasurement>Kelvin</UnitOfMeasurement>   <Description>DewpointTemperature 2m above surface, measured in Kelvin</Description></MetElement-->
+<MetElement> <ShortName>TTT</ShortName>     <UnitOfMeasurement>K</UnitOfMeasurement>            <Description>Temperature 2m above surface</Description></MetElement>
+<MetElement> <ShortName>Td</ShortName>      <UnitOfMeasurement>K</UnitOfMeasurement>            <Description>Dewpoint 2m above surface</Description></MetElement>
+<MetElement> <ShortName>TX</ShortName>      <UnitOfMeasurement>K</UnitOfMeasurement>            <Description>Maximum temperature - within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>TN</ShortName>      <UnitOfMeasurement>K</UnitOfMeasurement>            <Description>Minimum temperature - within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>DD</ShortName>      <UnitOfMeasurement>0°..360°</UnitOfMeasurement>     <Description>Wind direction</Description></MetElement>
+<MetElement> <ShortName>FF</ShortName>      <UnitOfMeasurement>m/s</UnitOfMeasurement>          <Description>Wind speed</Description></MetElement>
+<MetElement> <ShortName>FX1</ShortName>     <UnitOfMeasurement>m/s</UnitOfMeasurement>          <Description>Maximum wind gust within the last hour</Description></MetElement>
+<MetElement> <ShortName>FX3</ShortName>     <UnitOfMeasurement>m/s</UnitOfMeasurement>          <Description>Maximum wind gust within the last 3 hours</Description></MetElement>
+<MetElement> <ShortName>FXh</ShortName>     <UnitOfMeasurement>m/s</UnitOfMeasurement>          <Description>Maximum wind gust within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>RR1c</ShortName>    <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Total precipitation during the last hour consistent with significant weather</Description></MetElement>
+<MetElement> <ShortName>RR1</ShortName>    <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Total precipitation during the last hour</Description></MetElement>
+<MetElement> <ShortName>RR3c</ShortName>    <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Total precipitation during the last 3 hours consistent with significant weather</Description></MetElement>
+<MetElement> <ShortName>RR3</ShortName>    <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Total precipitation during the last 3 hours</Description></MetElement>
+<MetElement> <ShortName>RRS1c</ShortName>   <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Snow-Rain-Equivalent during the last hour</Description></MetElement>
+<MetElement> <ShortName>RRS3c</ShortName>   <UnitOfMeasurement>kg/m2</UnitOfMeasurement>        <Description>Snow-Rain-Equivalent during the last 3 hours</Description></MetElement>
+<MetElement> <ShortName>ww</ShortName>      <UnitOfMeasurement>-</UnitOfMeasurement>            <Description>Significant Weather</Description></MetElement>
+<MetElement> <ShortName>W1W2</ShortName>    <UnitOfMeasurement>-</UnitOfMeasurement>            <Description>Past weather during the last 6 hours</Description></MetElement>
+<MetElement> <ShortName>N</ShortName>       <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Total cloud cover</Description></MetElement>
+<MetElement> <ShortName>Neff</ShortName>    <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Effective cloud cover</Description></MetElement>
+<MetElement> <ShortName>N05</ShortName>     <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Cloud cover below 500 ft.</Description></MetElement>
+<MetElement> <ShortName>Nl</ShortName>      <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Low cloud cover (lower than 2 km)</Description></MetElement>
+<MetElement> <ShortName>Nm</ShortName>      <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Midlevel cloud cover (2-7 km)</Description></MetElement>
+<MetElement> <ShortName>Nh</ShortName>      <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>High cloud cover (>7 km)</Description></MetElement>
+<MetElement> <ShortName>PPPP</ShortName>    <UnitOfMeasurement>Pa</UnitOfMeasurement>           <Description>Surface pressure, reduced</Description></MetElement>
+<MetElement> <ShortName>T5cm</ShortName>    <UnitOfMeasurement>K</UnitOfMeasurement>            <Description>Temperature 5cm above surface</Description></MetElement>
+<MetElement> <ShortName>RadS3</ShortName>   <UnitOfMeasurement>kJ/m2</UnitOfMeasurement>        <Description>Short wave radiation balance during the last 3 hours</Description></MetElement>
+<MetElement> <ShortName>Rad1h</ShortName>   <UnitOfMeasurement>kJ/m2</UnitOfMeasurement>        <Description>Global Irradiance</Description></MetElement>
+<MetElement> <ShortName>RadL3</ShortName>   <UnitOfMeasurement>kJ/m2</UnitOfMeasurement>        <Description>Long wave radiation balance during the last 3 hours</Description></MetElement>
+<MetElement> <ShortName>VV</ShortName>      <UnitOfMeasurement>m</UnitOfMeasurement>            <Description>Visibility</Description></MetElement>
+<MetElement> <ShortName>SunD1</ShortName>   <UnitOfMeasurement>s</UnitOfMeasurement>            <Description>Sunshine duration during the last Hour</Description></MetElement>
+<MetElement> <ShortName>FXh25</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of wind gusts >= 25kn within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>FXh40</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of wind gusts >= 40kn within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>FXh55</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of wind gusts >= 55kn within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>wwM</ShortName>     <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability for fog within the last hour</Description></MetElement>
+<MetElement> <ShortName>wwM6</ShortName>    <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability for fog within the last 6 hours</Description></MetElement>
+<MetElement> <ShortName>wwMh</ShortName>    <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability for fog within the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>Rh00</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.0mm during the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>R602</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.2mm during the last 6 hours</Description></MetElement>
+<MetElement> <ShortName>Rh02</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.2mm during the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>Rd02</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.2mm during the last 24 hours</Description></MetElement>
+<MetElement> <ShortName>Rh10</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 1.0mm during the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>R650</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 5.0mm during the last 6 hours</Description></MetElement>
+<MetElement> <ShortName>Rh50</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 5.0mm during the last 12 hours</Description></MetElement>
+<MetElement> <ShortName>Rd50</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 5.0mm during the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>TG</ShortName>   <UnitOfMeasurement>K</UnitOfMeasurement>   <Description>Minimum surface temperature at 5cm within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>TM</ShortName>   <UnitOfMeasurement>K</UnitOfMeasurement>   <Description>Mean temperature during the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>DRR1</ShortName>   <UnitOfMeasurement>s</UnitOfMeasurement>   <Description>Duration of precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwZ</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of drizzle within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwD</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of stratiform precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwC</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of convective precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwT</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of thunderstorms within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwL</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of liquid precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwS</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of solid precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwF</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of freezing rain within the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwP</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of precipitation within the last hour</Description></MetElement>
+<MetElement>   <ShortName>VV10</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Visibility below 1000m</Description></MetElement>
+<MetElement>   <ShortName>E_TTT</ShortName>   <UnitOfMeasurement>K</UnitOfMeasurement>   <Description>Absolute error temperature 2m above surface</Description></MetElement>
+<MetElement>   <ShortName>E_FF</ShortName>   <UnitOfMeasurement>m/s</UnitOfMeasurement>   <Description>Absolute error wind speed 10m above surface</Description></MetElement>
+<MetElement>   <ShortName>E_DD</ShortName>   <UnitOfMeasurement>0°..360°</UnitOfMeasurement>   <Description>Absolute error wind direction</Description></MetElement>
+<MetElement>   <ShortName>E_Td</ShortName>   <UnitOfMeasurement>K</UnitOfMeasurement>   <Description>Absolute error dew point 2m above surface</Description></MetElement>
+<MetElement>   <ShortName>RR6</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>RR6c</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 6 hours consistent with significant weather</Description></MetElement>
+<MetElement>   <ShortName>R600</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.0mm during the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>R101</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.1 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R102</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.2 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R103</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.3 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R105</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.5 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R107</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.7 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R110</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 1.0 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R120</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 2.0 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>SunD</ShortName>   <UnitOfMeasurement>s</UnitOfMeasurement>   <Description>Yesterdays total sunshine duration </Description></MetElement>
+<MetElement>   <ShortName>RSunD</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Relative sunshine duration within the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>PSd00</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: relative sunshine duration >  0 % within 24 hours</Description></MetElement>
+<MetElement>   <ShortName>PSd30</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: relative sunshine duration > 30 % within 24 hours</Description></MetElement>
+<MetElement>   <ShortName>PSd60</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: relative sunshine duration > 60 % within 24 hours</Description></MetElement>
+<MetElement>   <ShortName>RRad1</ShortName>   <UnitOfMeasurement>% (0..80)</UnitOfMeasurement>   <Description>Global irradiance within the last hour</Description></MetElement>
+<MetElement>   <ShortName>PEvap</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Potential evapotranspiration within the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>R130</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 3.0 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>R150</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 5.0 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>RR1o1</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 10 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>RR1w1</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 15 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>RR1u1</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 25 mm during the last hour</Description></MetElement>
+<MetElement>   <ShortName>wwD6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of stratiform precipitation within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwC6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of convective precipitation within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwT6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of thunderstorms within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwP6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of precipitation within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwL6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of liquid precipitation within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwF6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of freezing rain within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwS6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of solid precipitation within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwZ6</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of drizzle within the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>wwMd</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of fog within the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>FX625</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of gusts >= 25kn within the last 6 hours </Description></MetElement>
+<MetElement>   <ShortName>FX640</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of gusts >= 40kn within the last 6 hours </Description></MetElement>
+<MetElement>   <ShortName>FX655</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of gusts >= 55kn within the last 6 hours </Description></MetElement>
+<MetElement>   <ShortName>wwDh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of stratiform precipitation within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwCh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of convective precipitation within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwTh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of thunderstorms within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwPh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of precipitation within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwLh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of liquid precipitation within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwFh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of freezing rain within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwSh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of solid precipitation within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>wwZh</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of drizzle within the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>R610</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 1.0 mm during the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>RRh</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>RRhc</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 12 hours consistent with significant weather</Description></MetElement>
+<MetElement>   <ShortName>ww3</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Significant Weather of the last 3 hours</Description></MetElement>
+<MetElement>   <ShortName>RRL1c</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total liquid precipitation during the last hour consistent with significant weather</Description></MetElement>
+<MetElement>   <ShortName>Rd00</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 0.0 mm during the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>Rd10</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of precipitation > 1.0 mm during the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>RRd</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>RRdc</ShortName>   <UnitOfMeasurement>kg / m2</UnitOfMeasurement>   <Description>Total precipitation during the last 24 hours consistent with significant weather</Description></MetElement>
+<MetElement>   <ShortName>Nlm</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Cloud cover low and mid level clouds below 7000 m</Description></MetElement>
+<MetElement>   <ShortName>wwPd</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of any precipitation within the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>H_BsC</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>   <Description>Cloud base of convective clouds</Description></MetElement>
+<MetElement>   <ShortName>wwTd</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability: Occurrence of thunderstorms within the last 24 hours</Description></MetElement>
+<MetElement>   <ShortName>E_PPP</ShortName>   <UnitOfMeasurement>Pa</UnitOfMeasurement>   <Description>Absolute error surface pressure</Description></MetElement>
+<MetElement>   <ShortName>SunD3</ShortName>   <UnitOfMeasurement>s</UnitOfMeasurement>   <Description>Sunshine duration during the last three hours</Description></MetElement>
+<MetElement>   <ShortName>WPc11</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Optional significant weather (highest priority) during the last hour</Description></MetElement>
+<MetElement>   <ShortName>WPc31</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Optional significant weather (highest priority) during the last 3 hours</Description></MetElement>
+<MetElement>   <ShortName>WPc61</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Optional significant weather (highest priority) during the last 6 hours</Description></MetElement>
+<MetElement>   <ShortName>WPch1</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Optional significant weather (highest priority) during the last 12 hours</Description></MetElement>
+<MetElement>   <ShortName>WPcd1</ShortName>   <UnitOfMeasurement>- (0..95)</UnitOfMeasurement>   <Description>Optional significant weather (highest priority) during the last 24 hours</Description></MetElement>
+<MetElement> <ShortName>Sa3</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>        <Description>Accumulated new snow amount in 3 hours</Description></MetElement>
+<MetElement> <ShortName>Sa6</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>        <Description>Accumulated new snow amount in 6 hours (amount of 3h values)</Description></MetElement>
+<MetElement> <ShortName>Sah</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>        <Description>Accumulated new snow amount in 12 hours (amount of 6h values)</Description></MetElement>
+<MetElement> <ShortName>Sad</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>        <Description>Accumulated new snow amount in 24 hours (amount of 12h values)</Description></MetElement>
+<MetElement>   <ShortName>Sa605</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 5cm new snow amount in 6 hours</Description></MetElement>
+<MetElement>   <ShortName>Sa610</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 10cm new snow amount in 6 hours</Description></MetElement>
+<MetElement>   <ShortName>Sa620</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 20cm new snow amount in 6 hours</Description></MetElement>
+<MetElement>   <ShortName>Sah05</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 5cm new snow amount in 12 hours</Description></MetElement>
+<MetElement>   <ShortName>Sah10</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 10cm new snow amount in 12 hours</Description></MetElement>
+<MetElement>   <ShortName>Sah30</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 30cm new snow amount in 12 hours</Description></MetElement>
+<MetElement>   <ShortName>Sad10</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 10cm new snow amount in 24 hours</Description></MetElement>
+<MetElement>   <ShortName>Sad30</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 30cm new snow amount in 24 hours</Description></MetElement>
+<MetElement>   <ShortName>Sad50</ShortName>   <UnitOfMeasurement>% (0..100)</UnitOfMeasurement>   <Description>Probability of > 50cm new snow amount in 24 hours</Description></MetElement>
+<MetElement> <ShortName>SnCv</ShortName>   <UnitOfMeasurement>m</UnitOfMeasurement>        <Description>Snow depth</Description></MetElement>
+
+
+</MetElementDefinition>

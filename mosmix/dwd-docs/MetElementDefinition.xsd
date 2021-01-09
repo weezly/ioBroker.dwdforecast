@@ -1,0 +1,19 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- This is the Definition Scheme for Metelements contained in the KML-based pointforecasts -->
+  <xs:element name="MetElementDefinition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MetElement" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="ShortName"/>
+              <xs:element type="xs:string" name="UnitOfMeasurement"/>
+              <xs:element type="xs:string" name="Description"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
