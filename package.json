@@ -1,6 +1,6 @@
 {
   "name": "iobroker.dwdforecast",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Template for adapter development",
   "author": {
     "name": "Bernd Wißler",
