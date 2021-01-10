@@ -1,4 +1,4 @@
-const mosmix=require('./index');
+const mosmix=require('../index');
 const fs = require('fs');
 const path = require('path');
 

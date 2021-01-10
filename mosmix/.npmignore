@@ -1,3 +1,2 @@
-testdata
-*.json
-test.js
+.dwd-docs
+.test
