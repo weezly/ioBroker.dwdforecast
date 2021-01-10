@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use strict';
 
 /*
@@ -20,10 +21,10 @@ class Template extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'template',
+            name: 'dwdforecast',
         });
         this.on('ready', this.onReady.bind(this));
-        this.on('stateChange', this.onStateChange.bind(this));
+        // this.on('stateChange', this.onStateChange.bind(this));
         // this.on('objectChange', this.onObjectChange.bind(this));
         // this.on('message', this.onMessage.bind(this));
         this.on('unload', this.onUnload.bind(this));
@@ -34,28 +35,239 @@ class Template extends utils.Adapter {
      */
     async onReady() {
         // Initialize your adapter here
-
+        this.log.info('Init adapter');
         this.config = Object.assign({
-            stationID:''
+            stationId:''
         }, this.config);
 
-        
-        /*
-        For every state in the system there has to be also an object of type state
-        Here a simple template for a boolean variable named "testVariable"
-        Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
-        */
-        await this.setObjectNotExistsAsync('testVariable', {
-            type: 'state',
-            common: {
-                name: 'testVariable',
-                type: 'boolean',
-                role: 'indicator',
-                read: true,
-                write: true,
+        this.log.debug(JSON.stringify(this.config));
+
+        const forecastdef={
+            'TTT': {
+                'id':'Temperature.2m',
+                'UnitOfMeasurement': 'K',
+                'Description': 'Temperature 2m above surface'
             },
-            native: {},
-        });
+            'Td': {
+                'id':'Dewpoint',
+                'UnitOfMeasurement': 'K',
+                'Description': 'Dewpoint (Kelvin) 2m above surface'
+            },
+            'T5cm': {
+                'id': 'Temperature.5cm',
+                'UnitOfMeasurement': 'K',
+                'Description': 'Temperature (Kelvin) 5cm above surface'
+            },
+            'DD': {
+                'id': 'Wind.Direction',
+                'UnitOfMeasurement': '°',
+                'Description': 'Wind direction (°)'
+            },
+            'FF': {
+                'id': 'Wind.Speed',
+                'UnitOfMeasurement': 'm/s',
+                'Description': 'Wind speed (m/s)'
+            },
+            'N': {
+                'id': 'CloudCover.Total',
+                'UnitOfMeasurement': '%',
+                'Description': 'Total cloud cover (%)'
+            },
+            'Neff': {
+                'id': 'CloudCover.Effective',
+                'UnitOfMeasurement': '%',
+                'Description': 'Effective cloud cover (%)'
+            },
+            'N05': {
+                'id': 'CloudCover.Below500Ft',
+                'UnitOfMeasurement': '%',
+                'Description': 'Cloud cover (%) below 500 ft.'
+            },
+            'Nl': {
+                'id': 'CloudCover.Below2km',
+                'UnitOfMeasurement': '%',
+                'Description': 'Low cloud cover (%) (lower than 2 km)'
+            },
+            'Nm': {
+                'id': 'CloudCover.2To7km',
+                'UnitOfMeasurement': '%',
+                'Description': 'Midlevel cloud cover (%) (2-7 km)'
+            },
+            'Nh': {
+                'id': 'CloudCover.Over7km',
+                'UnitOfMeasurement': '%',
+                'Description': 'High cloud cover (%) (>7 km)'
+            },
+            'PPPP': {
+                'id': 'Pressure',
+                'UnitOfMeasurement': 'Pa',
+                'Description': 'Surface pressure (Pa), reduced'
+            },
+            'VV': {
+                'id': 'Visibility',
+                'UnitOfMeasurement': 'm',
+                'Description': 'Visibility (m)'
+            },
+            'SunD1': {
+                'id': 'Sunshine',
+                'UnitOfMeasurement': 's',
+                'Description': 'Sunshine duration (s) during the last Hour'
+            },
+            'wwM': {
+                'id': 'Fog',
+                'UnitOfMeasurement': '%',
+                'Description': 'Probability for fog (%) within the last hour'
+            },
+        };
+        const getTempCelsius=(tempK)=>{
+            return tempK - 273.15;
+        };
+
+
+        if (this.config.stationId.length>0){
+
+            //Reading Station
+            await mosmix.readStationForecast({ stationId: this.config.stationId, adapter:this}).then(async result=>{
+
+
+                if (result.placemark){
+                    
+                    const keys= Object.keys(result.placemark);
+                    for (const index in keys){
+                        const key = keys[index];
+                        const id = `placemark.${key}`;
+                        await this.setObjectNotExistsAsync(id, {
+                            type: 'state',
+                            common: {
+                                read: true,
+                                write: false,
+                                type: 'string',
+                            },
+                            native: {},
+                        }).then(()=>{
+                            this.setState(id, result.placemark[key]);
+                        });
+                    }
+                }
+
+
+                if (result.coordinates){
+                    const keys = Object.keys(result.coordinates);
+                    for (const index in keys) {
+                        const key = keys[index];
+                        const id = `coordinates.${key}`;
+                        await this.setObjectNotExistsAsync(id, {
+                            type: 'state',
+                            common: {
+                                read: true,
+                                write: false,
+                                type: 'string'
+                            },
+                            native: {},
+                        }).then(() => {
+                            this.setState(id, result.coordinates[key]);
+                        });
+                    }
+                }
+
+                let id = `forecast.time.last`;
+                await this.setObjectNotExistsAsync(id, {
+                    type: 'state',
+                    common: {
+                        type: 'date',
+                        read: true,
+                        write: false,
+                    },
+                    native: {},
+                }).then(() => {
+                    this.setState(id, result.times[0]);
+                });
+                id = `forecast.time.next`;
+                await this.setObjectNotExistsAsync(id, {
+                    type: 'state',
+                    common: {
+                        type: 'datearray',
+                        read: true,
+                        write: false,
+                    },
+                    native: {},
+                }).then(() => {
+                    this.setState(id, result.times);
+                });
+
+                const keys = Object.keys(result.forecast);
+                for (const index in keys) {
+                    const measureId = keys[index];
+                    if (forecastdef[measureId]) {
+                        const baseid = `forecast.${forecastdef[measureId].id}`;
+                        const isKelvin = (forecastdef[measureId].UnitOfMeasurement == 'K');
+                        const valid = `${baseid}.${isKelvin ? 'Kelvin.value' : 'value'}`;
+                        await this.setObjectNotExistsAsync(valid, {
+                            type: 'state',
+                            common: {
+                                read: true,
+                                type: 'number',
+                                write: false,
+                                name: forecastdef[measureId].Description
+                            },
+                            native: {},
+                        }).then(() => {
+                            this.setState(valid, result.forecast[measureId][0]);
+                        });
+
+                        const forecastid = `${baseid}.${isKelvin ? 'Kelvin.forecast' : 'forecast'}`;
+                        await this.setObjectNotExistsAsync(forecastid, {
+                            type: 'state',
+                            common: {
+                                read: true,
+                                type: 'number',
+                                write: false,
+                                name: forecastdef[measureId].Description
+                            },
+                            native: {},
+                        }).then(() => {
+                            this.setState(forecastid, result.forecast[measureId]);
+                        });
+
+
+                        if (isKelvin) {
+                            //Celsius Value
+                            const cvalid = `${baseid}.Celsius.value`;
+                            await this.setObjectNotExistsAsync(cvalid, {
+                                type: 'state',
+                                common: {
+                                    read: true,
+                                    type: 'number',
+                                    write: false,
+                                    name: forecastdef[measureId].Description.replace('(Kelvin)', '(°C)')
+                                },
+                                native: {},
+                            }).then(() => {
+                                this.setState(cvalid, getTempCelsius(result.forecast[measureId][0]));
+                            });
+
+                            const cforecastid = `${baseid}.Celsius.forecast`;
+                            await this.setObjectNotExistsAsync(cforecastid, {
+                                type: 'state',
+                                common: {
+                                    read: true,
+                                    type: 'number',
+                                    write: false,
+                                    name: forecastdef[measureId].Description
+                                },
+                                native: {},
+                            }).then(() => {
+                                this.setState(cforecastid, result.forecast[measureId].map(kelvin=>{
+                                    return getTempCelsius(kelvin);
+                                }));
+                            });
+                        }
+
+                    }
+                }
+
+            });
+        }
 
         // // In order to get state updates, you need to subscribe to them. The following line adds a subscription for our variable we have created above.
         // this.subscribeStates('testVariable');
@@ -84,6 +296,7 @@ class Template extends utils.Adapter {
 
         // result = await this.checkGroupAsync('admin', 'admin');
         // this.log.info('check group user admin group admin: ' + result);
+        this.terminate();
     }
 
     /**

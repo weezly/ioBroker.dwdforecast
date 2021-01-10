@@ -168,7 +168,7 @@ const readStationForecast = ({ stationId, adapter = null})=>{
                         }
                         break;
                     case 'dwd:ProductDefinition':
-                    case 'dwd:Placemark':
+                    case 'kml:Placemark':
                         {
                             const name = currentTag.name.split(':')[1];
                             weatherForecast.placemark = weatherForecast.placemark || {};
