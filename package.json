@@ -1,6 +1,6 @@
 {
   "name": "iobroker.dwdforecast",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Template for adapter development",
   "author": {
     "name": "weezly",
