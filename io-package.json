@@ -31,7 +31,7 @@
         },
         "desc": {
             "en": "Reads local weather data provided by the German Weather Service DWD",
-            "de": "Liest lokale Wetterdaten, bereitgestellt vom Deutschen Wetterdienst DWD",
+            "de": "Liefert lokale Wetterdaten, bereitgestellt vom OpenData Deutschen Wetterdienst DWD",
             "ru": "Reads local weather data provided by the German Weather Service DWD",
             "pt": "Reads local weather data provided by the German Weather Service DWD",
             "nl": "Reads local weather data provided by the German Weather Service DWD",

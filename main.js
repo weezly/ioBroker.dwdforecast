@@ -131,13 +131,13 @@ class Template extends utils.Adapter {
 
 
                 if (result.placemark){
-                    
+
                     const keys= Object.keys(result.placemark);
                     for (const index in keys){
                         const key = keys[index];
                         const id = `placemark.${key}`;
                         await this.setObjectNotExistsAsync(id, {
-                            type: 'state',
+                            type: 'text',
                             common: {
                                 read: true,
                                 write: false,
@@ -157,7 +157,7 @@ class Template extends utils.Adapter {
                         const key = keys[index];
                         const id = `coordinates.${key}`;
                         await this.setObjectNotExistsAsync(id, {
-                            type: 'state',
+                            type: 'text',
                             common: {
                                 read: true,
                                 write: false,
@@ -172,9 +172,9 @@ class Template extends utils.Adapter {
 
                 let id = `forecast.time.last`;
                 await this.setObjectNotExistsAsync(id, {
-                    type: 'state',
+                    type: 'date',
                     common: {
-                        type: 'date',
+                        type: 'string',
                         read: true,
                         write: false,
                     },
@@ -184,9 +184,9 @@ class Template extends utils.Adapter {
                 });
                 id = `forecast.time.next`;
                 await this.setObjectNotExistsAsync(id, {
-                    type: 'state',
+                    type: 'list',
                     common: {
-                        type: 'datearray',
+                        type: 'array',
                         read: true,
                         write: false,
                     },
@@ -206,7 +206,7 @@ class Template extends utils.Adapter {
                             type: 'state',
                             common: {
                                 read: true,
-                                type: 'number',
+                                type: 'value',
                                 write: false,
                                 name: forecastdef[measureId].Description
                             },
@@ -220,7 +220,7 @@ class Template extends utils.Adapter {
                             type: 'state',
                             common: {
                                 read: true,
-                                type: 'number',
+                                type: 'array',
                                 write: false,
                                 name: forecastdef[measureId].Description
                             },
@@ -237,7 +237,7 @@ class Template extends utils.Adapter {
                                 type: 'state',
                                 common: {
                                     read: true,
-                                    type: 'number',
+                                    type: 'value',
                                     write: false,
                                     name: forecastdef[measureId].Description.replace('(Kelvin)', '(°C)')
                                 },
@@ -251,7 +251,7 @@ class Template extends utils.Adapter {
                                 type: 'state',
                                 common: {
                                     read: true,
-                                    type: 'number',
+                                    type: 'array',
                                     write: false,
                                     name: forecastdef[measureId].Description
                                 },
