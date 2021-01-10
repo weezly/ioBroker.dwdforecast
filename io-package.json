@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "dwdforecast",
-        "version": "0.0.1",
+        "version": "0.0.9",
         "news": {
-            "0.0.1": {
+            "0.0.9": {
                 "en": "initial release",
                 "de": "Erstveröffentlichung",
                 "ru": "Начальная версия",
@@ -16,30 +16,30 @@
                 "zh-cn": "首次出版"
             }
         },
-        "title": "Weather forecast from Deutscher Wetterdienst DWD",
+        "title": "Local weather forecast data (DWD)",
         "titleLang": {
-            "en": "Weather forecast from Deutscher Wetterdienst DWD",
-            "de": "Wettervorhersage vom Deutschen Wetterdienst DWD",
-            "ru": "Прогноз погоды от Deutscher Wetterdienst DWD",
-            "pt": "Previsão do tempo de Deutscher Wetterdienst DWD",
-            "nl": "Weersverwachting van Deutscher Wetterdienst DWD",
-            "fr": "Prévisions météo de Deutscher Wetterdienst DWD",
-            "it": "Previsioni del tempo da Deutscher Wetterdienst DWD",
-            "es": "Pronóstico del tiempo de Deutscher Wetterdienst DWD",
-            "pl": "Prognoza pogody z Deutscher Wetterdienst DWD",
-            "zh-cn": "来自Deutscher Wetterdienst DWD的天气预报"
+            "en": "Local weather forecast data (DWD)",
+            "de": "Lokale Wetterdaten (DWD)",
+            "ru": "Прогноз погоды от DWD",
+            "pt": "Previsão do tempo de DWD",
+            "nl": "Weersverwachting van DWD",
+            "fr": "Prévisions météo de DWD",
+            "it": "Previsioni del tempo da DWD",
+            "es": "Pronóstico del tiempo de DWD",
+            "pl": "Prognoza pogody z DWD",
+            "zh-cn": "来自DWD的天气预报"
         },
         "desc": {
-            "en": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "de": "Holt (MOSMIX) Wettervorhersage-Daten vom Deutschen Wetterdienst DWD von einer lokalen Station (z.B. Temperatur und Taupunkt in 2 m Höhe, Windgeschwindigkeit, Windrichtung, maximale Windböe in 10 m Höhe, erwartete Niederschlagsmengen, Niederschlagsart, Luftdruck, Sonnenscheindauer)",
-            "ru": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "pt": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "nl": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "fr": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "it": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "es": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "pl": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
-            "zh-cn": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)"
+            "en": "Reads local weather data provided by the German Weather Service DWD",
+            "de": "Liest lokale Wetterdaten, bereitgestellt vom Deutschen Wetterdienst DWD",
+            "ru": "Reads local weather data provided by the German Weather Service DWD",
+            "pt": "Reads local weather data provided by the German Weather Service DWD",
+            "nl": "Reads local weather data provided by the German Weather Service DWD",
+            "fr": "Reads local weather data provided by the German Weather Service DWD",
+            "it": "Reads local weather data provided by the German Weather Service DWD",
+            "es": "Reads local weather data provided by the German Weather Service DWD",
+            "pl": "Reads local weather data provided by the German Weather Service DWD",
+            "zh-cn": "Reads local weather data provided by the German Weather Service DWD"
         },
         "authors": [
             "Bernd Wißler <djweezly@gmail.com>"

@@ -1,9 +1,7 @@
 
 ![Logo](admin/dwdforecast.png)
+<small>The cloud Icon was made by <a  href="https://www.flaticon.com/authors/freepik"  title="Freepik">Freepik</a> from <a  href="https://www.flaticon.com/"  title="Flaticon"> www.flaticon.com</a></small>
 
-<small>Cloud Icon made by <a  href="https://www.flaticon.com/authors/freepik"  title="Freepik">Freepik</a> from <a  href="https://www.flaticon.com/"  title="Flaticon"> www.flaticon.com</a></small>
-
-![Logo](admin/dwdforecast.png)
 # ioBroker.dwdforecast
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.dwdforecast.svg)](https://www.npmjs.com/package/iobroker.dwdforecast)
@@ -94,7 +92,7 @@ For later updates, the above procedure is not necessary. Just do the following:
 
 ## Changelog
 
-### 0.0.1
+### 0.0.9
 * (Bernd Wißler) initial release
 
 ## License
