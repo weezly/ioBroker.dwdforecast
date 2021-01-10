@@ -1,9 +1,9 @@
 {
   "name": "iobroker.dwdforecast",
   "version": "0.0.6",
-  "description": "Template for adapter development",
+  "description": "Gets the MOSMIX weather forecast data from the German weather service (Deutscher Wetterdienst DWD) from a local station (e.g. temperature and dew point at 2 m height, wind speed, wind direction, maximum wind gust at a height of 10 m, expected amount of precipitation, type of precipitation (rain or snow, air pressure, duration of sunshine)",
   "author": {
-    "name": "weezly",
+    "name": "Bernd Wissler",
     "email": "djweezly@gmail.com"
   },
   "homepage": "https://github.com/weezly/ioBroker.dwdforecast",
