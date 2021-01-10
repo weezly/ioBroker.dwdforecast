@@ -4,11 +4,14 @@
 [![NPM version](http://img.shields.io/npm/v/iobroker.dwdforecast.svg)](https://www.npmjs.com/package/iobroker.dwdforecast)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.dwdforecast.svg)](https://www.npmjs.com/package/iobroker.dwdforecast)
 
-## DWD weather forecast adapter  ioBroker
+## DWD weather forecast adapter  ioBroker (IN DEVELOPMENT - NOT STABLE!)
 
 Get's the weather data from a local weather station of the german weather service "Deutscher Wetterdienst (DWD)"
+Main parts based on:https://github.com/ioBroker/ioBroker.example, https://github.com/c5te1n/node-red-contrib-dwd-local-weather
 
 ## Changelog
+
+
 
 ### 0.0.1
 * (Author) initial release
