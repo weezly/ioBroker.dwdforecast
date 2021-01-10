@@ -1,4 +1,4 @@
-![Logo](admin/template.png)
+![Logo](admin/dwdforecast.png)
 # ioBroker.dwdforecast
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.dwdforecast.svg)](https://www.npmjs.com/package/iobroker.dwdforecast)
