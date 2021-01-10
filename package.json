@@ -1,9 +1,9 @@
 {
   "name": "iobroker.dwdforecast",
-  "version": "0.0.2-0",
+  "version": "0.0.1",
   "description": "Template for adapter development",
   "author": {
-    "name": "Bernd Wißler",
+    "name": "weezly",
     "email": "djweezly@gmail.com"
   },
   "homepage": "https://github.com/weezly/ioBroker.dwdforecast",
