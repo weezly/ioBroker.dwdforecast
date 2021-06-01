@@ -19,7 +19,7 @@
     "url": "https://github.com/weezly/ioBroker.dwdforecast"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.4.0",
+    "@iobroker/adapter-core": "^2.5.0",
     "axios": "~0.21.1",
     "line-reader": "^0.4.0",
     "node-line-reader": "0.0.3",
